@@ -3,8 +3,59 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/circle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/custom_button.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_button.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_icon.xml" value="0.14375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_icon_focused.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_icon_normal.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_icon_pressed.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_warning_no_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_warning_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/exit_warning_yes_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/free-icon-font-search-3917026_24.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/free-icon-font-search-3917132_24.xml" value="0.14375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/free-icon-font-search-3917754_24.xml" value="0.14375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/free-icon-font-sign-out-3917155_24.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/free-icon-font-sign-out-3917770_24.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/mail_icon.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/number_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/phone_number_icon.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_icon.xml" value="0.14375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_icon_focused.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_icon_normal.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_icon_pressed.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_info_header_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile_cover.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile_number_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile_number_rectangle_0.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile_status_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile_status_rectangle0.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/project_tile_vacancy_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/request_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/search_bar_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/search_icon.xml" value="0.14375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/search_icon_focused.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/search_icon_normal.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/search_icon_pressed.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/start_button.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/status_rectangle.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/user_icon.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/user_icon_focused.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/user_icon_normal.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/user_icon_pressed.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/user_profile.xml" value="0.26666666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/drawable/wiki_icon.xml" value="0.26666666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/activity_main.xml" value="0.23645833333333333" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/welcome_fragment.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/exit_warning.xml" value="0.536" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/menu.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/project_info.xml" value="0.4" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/project_tile.xml" value="0.536" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/search.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/user_profile.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/TestTask/app/src/main/res/layout/welcome_fragment.xml" value="0.264" />
       </map>
     </option>
   </component>

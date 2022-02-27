@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/royal_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_text"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="130dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="@string/email_request"
+        android:background="@drawable/request_rectangle"
+        android:gravity="center"
+        android:textColor="@color/snow"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/project_number"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/project_number_request"
+        android:textColor="@color/snow"
+        android:textSize="20sp"
+        android:background="@drawable/request_rectangle"/>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:textAllCaps="false"
+        android:background="@drawable/start_button"
+        android:text="@string/start_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
 
 </LinearLayout>
