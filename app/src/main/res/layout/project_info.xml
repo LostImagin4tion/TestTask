@@ -35,6 +35,7 @@
     </FrameLayout>
 
     <ImageView
+        android:id="@+id/mail_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/mail_icon"
@@ -47,16 +48,15 @@
         android:id="@+id/mail_button"
         android:layout_width="95dp"
         android:layout_height="40dp"
-        android:layout_marginStart="0dp"
         android:background=""
-        android:gravity="end"
+        android:gravity="center_vertical"
         android:text="Mail"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_alignTop="@id/badge"
-        android:paddingEnd="5dp"
-        android:paddingBottom="-5dp"/>
+        android:paddingStart="45dp"
+        android:paddingEnd="5dp"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -70,17 +70,17 @@
     <Button
         android:id="@+id/wiki_button"
         android:layout_width="95dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background=""
+        android:gravity="center_vertical"
         android:text="Wiki"
-        android:textColor="@color/white"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="20sp"
-        android:gravity="end"
+        android:paddingStart="45dp"
         android:paddingEnd="5dp"
         android:layout_marginStart="100dp"
-        android:layout_alignTop="@id/badge"
-        android:layout_alignBottom="@id/badge"
-        android:background="" />
+        android:layout_alignBottom="@id/badge" />
 
     <TextView
         android:id="@+id/header"
