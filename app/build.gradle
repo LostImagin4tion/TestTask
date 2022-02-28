@@ -57,4 +57,14 @@ dependencies {
     implementation 'androidx.emoji:emoji-bundled:1.1.0'
     implementation 'androidx.emoji:emoji:1.1.0'
     implementation 'androidx.emoji:emoji-appcompat:1.1.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.13.+"
+
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

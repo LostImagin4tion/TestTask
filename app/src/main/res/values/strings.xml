@@ -4,5 +4,5 @@
     <string name="project_number_request">Введите номер проекта</string>
     <string name="start_button">Начать</string>
     <string name="welcome_text">MEME App</string>
-    <string name="string_bar">Поиск по номеру</string>
+    <string name="search_bar">Поиск по номеру проекта</string>
 </resources>

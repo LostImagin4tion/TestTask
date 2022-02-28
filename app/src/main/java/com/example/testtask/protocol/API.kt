@@ -1,0 +1,15 @@
+package com.example.testtask.protocol
+
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+
+class API(private val baseURL: String) {
+
+    fun connect(): UserService {
+        return Retrofit.Builder()
+            .baseUrl(baseURL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(UserService::class.java)
+    }
+}

@@ -15,7 +15,7 @@
         android:layout_width="103dp"
         android:layout_height="match_parent"
         android:src="@drawable/user_icon"
-        android:background=""/>
+        android:background="@android:color/transparent"/>
 
     <ImageButton
         android:id="@+id/search_button"
@@ -23,7 +23,7 @@
         android:layout_height="match_parent"
         android:src="@drawable/project_icon"
         android:layout_toRightOf="@id/profile_button"
-        android:background="" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/project_button"
@@ -31,7 +31,7 @@
         android:layout_height="match_parent"
         android:src="@drawable/search_icon"
         android:layout_toRightOf="@id/search_button"
-        android:background="" />
+        android:background="@android:color/transparent" />
 
     <ImageButton
         android:id="@+id/exit_button"
@@ -39,6 +39,6 @@
         android:layout_height="match_parent"
         android:src="@drawable/exit_icon"
         android:layout_toRightOf="@id/project_button"
-        android:background="" />
+        android:background="@android:color/transparent" />
 
 </GridLayout>

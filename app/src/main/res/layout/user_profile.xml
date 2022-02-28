@@ -9,21 +9,31 @@
     android:orientation="vertical"
     android:background="@color/blue_grey">
 
-    <ImageView
-        android:id="@+id/avatar"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="30dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/avatar_card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
         android:layout_marginBottom="540dp"
-        android:background="@drawable/circle" />
+        app:cardCornerRadius="80dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/example"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/status"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/avatar"
-        android:layout_alignTop="@id/avatar"
-        android:layout_marginStart="15dp"
+        android:layout_width="115dp"
+        android:layout_height="33sp"
+        android:layout_toRightOf="@id/avatar_card_view"
+        android:layout_alignTop="@id/avatar_card_view"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/user_status_rectangle"
         android:text="Status"
@@ -36,10 +46,10 @@
         android:id="@+id/user_name"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/avatar"
+        android:layout_toRightOf="@id/avatar_card_view"
         android:layout_below="@id/status"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="20dp"
         android:text="User\nName"
         android:textColor="@color/white"
         android:textSize="30sp"

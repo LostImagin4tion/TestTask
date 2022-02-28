@@ -3,7 +3,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/welcome_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
@@ -24,10 +24,12 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:text="@string/email_request"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_request"
+        android:textColorHint="@color/grey"
         android:background="@drawable/request_rectangle"
         android:gravity="center"
-        android:textColor="@color/snow"
+        android:textColor="@color/grey"
         android:textSize="20sp" />
 
     <EditText
@@ -37,8 +39,10 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="@string/project_number_request"
-        android:textColor="@color/snow"
+        android:inputType="number"
+        android:hint="@string/project_number_request"
+        android:textColorHint="@color/grey"
+        android:textColor="@color/grey"
         android:textSize="20sp"
         android:background="@drawable/request_rectangle"/>
 

@@ -41,10 +41,9 @@ class MenuFragment: Fragment() {
 
         start.setOnClickListener {
             val email = email.text.toString()
-            val projectNumber = projectNumber.text.toString()
+            val projectNumber: String? = projectNumber.text?.toString()
 
-            //TODO (requireActivity() as com.example.testtask.MainActivity).
+            (requireActivity() as com.example.testtask.MainActivity).goUserProfile(email,projectNumber)
         }
     }
-
 }
