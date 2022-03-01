@@ -5,11 +5,19 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class API(private val baseURL: String) {
 
-    fun connect(): UserService {
+    fun connectUserService(): UserService {
         return Retrofit.Builder()
             .baseUrl(baseURL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(UserService::class.java)
+    }
+
+    fun connectProjectService(): ProjectService {
+        return Retrofit.Builder()
+            .baseUrl(baseURL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(ProjectService::class.java)
     }
 }

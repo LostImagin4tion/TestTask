@@ -5,10 +5,10 @@ import com.google.gson.annotations.SerializedName
 data class UserResponse (
     @SerializedName("code") var code: Int? = null,
     @SerializedName("message") var message: String? = null,
-    @SerializedName("data") var data: Data?   = Data()
+    @SerializedName("data") var data: UserData?   = UserData()
 )
 
-data class Data (
+data class UserData (
     @SerializedName("userId") var userId: Int? = null,
     @SerializedName("fullName") var fullName: String? = null,
     @SerializedName("lastName") var lastName: String? = null,

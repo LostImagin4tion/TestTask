@@ -10,14 +10,24 @@
     android:orientation="vertical"
     android:background="@color/blue_grey">
 
+    <ImageButton
+        android:id="@+id/project_info_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/back_circle"
+        android:paddingStart="-5dp"
+        android:src="@drawable/back_icon" />
+
     <FrameLayout
-        android:id="@+id/badge"
+        android:id="@+id/badge_card_view"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="215dp">
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="215dp"
+        android:layout_below="@id/project_info_back">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -25,6 +35,7 @@
             app:cardCornerRadius="8dp">
 
             <ImageView
+                android:id="@id/badge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/example"
@@ -39,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/mail_icon"
-        android:layout_alignBottom="@id/badge"
+        android:layout_alignBottom="@id/badge_card_view"
         android:layout_marginBottom="3dp"
         android:layout_marginStart="5dp"/>
 
@@ -53,7 +64,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:layout_alignTop="@id/badge"
+        android:layout_alignTop="@id/badge_card_view"
         android:paddingStart="45dp"
         android:paddingEnd="5dp"/>
 
@@ -61,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/wiki_icon"
-        android:layout_alignBottom="@id/badge"
+        android:layout_alignBottom="@id/badge_card_view"
         android:layout_marginStart="105dp"
         android:layout_marginBottom="3dp"/>
 
@@ -78,102 +89,104 @@
         android:paddingStart="45dp"
         android:paddingEnd="5dp"
         android:layout_marginStart="100dp"
-        android:layout_alignBottom="@id/badge" />
+        android:layout_alignBottom="@id/badge_card_view" />
 
     <TextView
         android:id="@+id/header"
         android:layout_width="375dp"
-        android:layout_height="115dp"
+        android:layout_height="wrap_content"
         android:text="Приготовление квантовых состояний для систем квантового распределения ключей на лазерах с оптической инжекцией"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:gravity="center"
-        android:layout_below="@id/badge"
+        android:layout_below="@id/badge_card_view"
         android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         android:background="@drawable/project_info_rectangle"/>
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/head_rectangle"
         android:layout_width="375dp"
-        android:layout_height="130dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/header"
         android:layout_marginTop="20dp"
-        android:paddingTop="10dp"
-        android:paddingStart="10dp"
-        android:background="@drawable/project_info_rectangle" />
+        android:paddingBottom="10dp"
+        android:background="@drawable/project_info_rectangle">
 
-    <TextView
-        android:id="@+id/head"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Руководитель:"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:layout_alignTop="@id/head_rectangle"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="15dp" />
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Руководитель:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp" />
 
-    <TextView
-        android:id="@+id/head_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Коробков Илья Андреевич, Backend-разработчик"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:layout_alignTop="@id/head"
-        android:layout_alignStart="@id/head"
-        android:layout_marginTop="30dp" />
+        <TextView
+            android:id="@+id/head_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Коробков Илья Андреевич, Backend-разработчик"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignTop="@id/head"
+            android:layout_alignStart="@id/head"
+            android:layout_marginTop="30dp" />
 
-    <ImageView
-        android:id="@+id/head_mail_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/mail_icon"
-        android:scaleX="0.75"
-        android:scaleY="0.75"
-        android:layout_alignTop="@id/head_name"
-        android:layout_alignStart="@id/head_name"
-        android:layout_marginTop="30dp"/>
+        <ImageView
+            android:id="@+id/head_mail_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mail_icon"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            android:layout_below="@id/head_name"
+            android:layout_alignStart="@id/head_name"
+            android:layout_marginTop="10dp"/>
 
-    <TextView
-        android:id="@+id/head_mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="rihsanov@miem.hse.ru"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:gravity="center_vertical"
-        android:layout_alignTop="@id/head_mail_icon"
-        android:layout_toRightOf="@id/head_mail_icon"
-        android:layout_alignBottom="@id/head_mail_icon"
-        android:layout_marginStart="5dp"
-        android:clickable="true" />
+        <TextView
+            android:id="@+id/head_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rihsanov@miem.hse.ru"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@id/head_mail_icon"
+            android:layout_toRightOf="@id/head_mail_icon"
+            android:layout_alignBottom="@id/head_mail_icon"
+            android:layout_marginStart="5dp"
+            android:clickable="true" />
 
-    <ImageView
-        android:id="@+id/phone_number_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/phone_number_icon"
-        android:scaleX="0.8"
-        android:scaleY="0.8"
-        android:layout_alignTop="@id/head_mail_icon"
-        android:layout_alignStart="@id/head_mail_icon"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="2dp"/>
+        <ImageView
+            android:id="@+id/phone_number_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phone_number_icon"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:layout_alignTop="@id/head_mail_icon"
+            android:layout_alignStart="@id/head_mail_icon"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="2dp"/>
 
-    <TextView
-        android:id="@+id/head_phone_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+79530532672"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:gravity="center_vertical"
-        android:layout_alignTop="@id/phone_number_icon"
-        android:layout_toRightOf="@id/phone_number_icon"
-        android:layout_alignBottom="@id/phone_number_icon"
-        android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/head_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+79530532672"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_alignTop="@id/phone_number_icon"
+            android:layout_toRightOf="@id/phone_number_icon"
+            android:layout_alignBottom="@id/phone_number_icon"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

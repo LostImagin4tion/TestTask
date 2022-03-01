@@ -9,12 +9,9 @@ import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.testtask.R
+import com.example.testtask.navigation.NavigationFragment
 
 class MenuFragment: Fragment() {
-
-    companion object {
-        fun newInstance() = MenuFragment()
-    }
 
     private lateinit var viewModel: MenuViewModel
 
@@ -37,13 +34,19 @@ class MenuFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        activity?.window?.statusBarColor = resources.getColor(R.color.royal_blue)
+
         viewModel = ViewModelProvider(this).get(MenuViewModel::class.java)
 
         start.setOnClickListener {
             val email = email.text.toString()
             val projectNumber: String? = projectNumber.text?.toString()
 
-            (requireActivity() as com.example.testtask.MainActivity).goUserProfile(email,projectNumber)
+            (requireActivity() as com.example.testtask.MainActivity).goUserProfile(email, projectNumber as String)
         }
+    }
+
+    companion object {
+        fun newInstance() = MenuFragment()
     }
 }

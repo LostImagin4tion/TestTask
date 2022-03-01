@@ -3,21 +3,22 @@ package com.example.testtask.user_profile
 import android.content.Context
 import android.os.Bundle
 import android.view.*
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.testtask.R
-import com.example.testtask.protocol.API
-import com.example.testtask.protocol.UserService
+import com.example.testtask.navigation.NavigationFragment
 import com.example.testtask.protocol.getUserAvatarURL
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.user_profile.*
 
 class UserProfile: Fragment() {
 
     private lateinit var viewModel: UserProfileViewModel
+
+    private lateinit var backButton:  ImageButton
 
     private lateinit var avatar: ImageView
     private lateinit var userName: TextView
@@ -37,6 +38,7 @@ class UserProfile: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.user_profile, container, false).apply {
+            backButton = findViewById(R.id.user_back)
             avatar = findViewById(R.id.avatar)
             userName = findViewById(R.id.user_name)
             status = findViewById(R.id.status)
@@ -47,6 +49,19 @@ class UserProfile: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         activity?.window?.statusBarColor = resources.getColor(R.color.blue_grey)
+        activity?.supportFragmentManager?.beginTransaction()
+            ?.add(R.id.container, NavigationFragment.newInstance(isProfileButton = true), "NavigationFragment")
+            ?.commit()
+
+        backButton.setOnClickListener {
+
+            if((requireActivity() as com.example.testtask.MainActivity).isBackStackSize()) {
+                (requireActivity() as com.example.testtask.MainActivity).onBackPressed()
+            }
+            else {
+                (requireActivity() as com.example.testtask.MainActivity).goExitWarning()
+            }
+        }
 
         val name = (arguments?.get(USERNAME) as CharSequence?)?.split(" ")
         val firstName = name?.get(1) ?: "User"
@@ -67,13 +82,9 @@ class UserProfile: Fragment() {
         val userID = arguments?.get(USER_ID) as String
         val avatarURL = getUserAvatarURL(baseURL, userID)
 
-        val avatarWidth = (avatar.layoutParams.width/2.75).toInt()
-        val avatarHeight = (avatar.layoutParams.height/2.75).toInt()
 
         Picasso.get()
             .load(avatarURL)
-            .resize(avatarWidth, avatarHeight)
-            .centerInside()
             .into(avatar)
     }
 
